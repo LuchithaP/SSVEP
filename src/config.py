@@ -3,6 +3,10 @@ import numpy as np
 FS = 256
 STIM_ONSET = 39
 
+WINDOW_SEC = 1
+WINDOW_SAMPLES = int(WINDOW_SEC * FS)
+
+
 CH_NAMES = ["PO7", "PO3", "POz", "PO4", "PO8", "O1", "Oz", "O2"]
 
 TARGET_FREQS = np.array(
