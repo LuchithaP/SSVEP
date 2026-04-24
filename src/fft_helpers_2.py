@@ -245,7 +245,7 @@ def evaluate_subject(eeg, reject_threshold=0.1):
 
             trial = preprocess_trial(trial)
 
-            pred = predict_fft(trial, bins, return_scores=True)
+            pred = predict_fft(trial, bins, return_scores=False)
 
             # -----------------------------
             # Update metrics
